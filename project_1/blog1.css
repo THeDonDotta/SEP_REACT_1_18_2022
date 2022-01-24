@@ -14,11 +14,12 @@ nav{
 section{
   grid-area: warriors;
 }
-h2{
+div{
   grid-area: about;
 }
 footer{
   grid-area: footer;
+  position: fixed bottom;
 }
 
 nav{
