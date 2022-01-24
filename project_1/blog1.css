@@ -1,0 +1,28 @@
+body{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 7fr 1fr;
+  grid-template-areas: 
+  "nav nav"
+  "warriors about"
+  "footer footer";
+}
+nav{
+  grid-area: nav;
+}
+section{
+  grid-area: warriors;
+}
+h2{
+  grid-area: about;
+}
+footer{
+  grid-area: footer;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

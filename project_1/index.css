@@ -1,0 +1,43 @@
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "blog1 blog2"
+  "blog3 blog4"
+  "footer footer";
+  gap: 10px;
+  background-color: lightblue;
+}
+header{
+  grid-area: header;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 70px;
+  
+}
+.card1{
+  grid-area: blog1;
+  border: 5px solid grey;
+}
+.card2{
+  grid-area: blog2;
+  border: 5px solid grey;
+}
+.card3{
+  grid-area: blog3;
+  border: 5px solid grey;
+}
+.card4{
+  border: 5px solid grey;
+  grid-area: blog4;
+}
+img{
+  width: 550px;
+  height: 400px;
+}
+footer{
+  grid-area: footer;
+}
+
